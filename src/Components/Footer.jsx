@@ -24,12 +24,12 @@ function Footer() {
                 <div>
                   <div className='d-flex'>
                     <input type="text" className='form-control bg-white ms-5 mt-2 ' placeholder='Enter your Mail ID.... '   />
-                    <div className='bg-white rounded d-flex align-items-center justify-content-center mx-2' style={{width:"40px"}}><FontAwesomeIcon icon={faArrowRight} /></div>
+                    <div className='bg-white rounded d-flex align-items-center justify-content-center mx-2 mt-2' style={{width:"40px"}}><FontAwesomeIcon icon={faArrowRight} /></div>
                   </div>
 
                   {/* Links , Helps , social media */}
 
-                  <div className="row mx-5 mt-3 text-light">
+                  <div className="row mx-5 my-3 text-light">
                     <div className="col-md-4">
                       <h4 className='fw-bold'>Links</h4>
                         <div>
@@ -41,12 +41,23 @@ function Footer() {
                     </div>
                     <div className="col-md-4">
                       <h4 className='fw-bold'>Help</h4>
+                        <div>
+                          <a className='text-light d-block' href=""  style={{textDecoration:'none'}}>Login</a>
+                          <a className='text-light d-block' href=""  style={{textDecoration:'none'}}>Register</a>
+                          <a className='text-light d-block' href=""  style={{textDecoration:'none'}}>Terms of Use</a>
+                          <a className='text-light d-block' href=""  style={{textDecoration:'none'}}>Privacy & Policy</a>
+                        </div>
                     </div>
                     <div className="col-md-4">
                       <h4 className='fw-bold'>Social Media</h4>
+                        <div>
+                          <a className='text-light d-block' href=""  style={{textDecoration:'none'}}>Facebook</a>
+                          <a className='text-light d-block' href=""  style={{textDecoration:'none'}}>Instagram</a>
+                          <a className='text-light d-block' href=""  style={{textDecoration:'none'}}>Twitter</a>
+                          <a className='text-light d-block' href=""  style={{textDecoration:'none'}}>YouTube</a>
+                        </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
