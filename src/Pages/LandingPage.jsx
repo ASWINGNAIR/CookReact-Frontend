@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Marquee from 'react-fast-marquee';
+import MealImg from '../assets/Meal_Home_Img.png'
 
 function LandingPage() {
 
@@ -37,7 +38,7 @@ function LandingPage() {
                 </button>
               </div>
               <div className="col-md-6 d-flex justify-content-center p-5 ">
-                <img className='w-50' src="https://www.pngall.com/wp-content/uploads/2/Healthy-Meal.png" alt="Food Image" />
+                <img className='w-50' src={MealImg} alt="Food Image" />
               </div>
             </div>
           </div>

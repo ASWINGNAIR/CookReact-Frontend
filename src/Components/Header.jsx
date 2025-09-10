@@ -24,13 +24,13 @@ function Header() {
                   <a className="nav-link text-white " href="/">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">Recipes</a>
+                  <a className="nav-link text-white" href="/recipe">Recipes</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-white" href="/about">About</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">Contact</a>
+                  <a className="nav-link text-white" href="/contact">Contact</a>
                 </li>
               </ul>
 
