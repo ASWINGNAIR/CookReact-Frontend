@@ -2,11 +2,14 @@ import { faArrowRight, faGraduationCap, faLocationCrosshairs, faPhone, faEnvelop
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
 function ContactPage() {
   return (
     <>
+      <Header/>
+
       <div className='container-fluid'>
         <div className='row px-5'>
           <div className='w-100 bg-success mt-5'>
@@ -115,6 +118,8 @@ function ContactPage() {
 
 
       </div>
+
+      <Footer />
 
     </>
   )

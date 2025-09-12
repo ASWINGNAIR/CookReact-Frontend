@@ -2,11 +2,15 @@ import React from 'react'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Card from 'react-bootstrap/Card';
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
 
 function RecipePage() {
   return (
     <>
+        <Header/>
+
         <div className="container-fluid">
 
             <div className="row mt-5">
@@ -25,7 +29,7 @@ function RecipePage() {
                 <div className="col-md-9">
                 <div className="d-flex justify-content-between align-items-center">
                     <h1 className="fw-bolder" style={{marginLeft:'150px'}}>All Recipes</h1>
-                    <input type="text" className="form-control w-50 me-5 mt-4" placeholder="Search your Recipes Name Here!!!"/>
+                    <input type="text" className="form-control w-50 me-5 mt-4 " style={{borderColor:'#1ABC9C'}} placeholder="Search your Recipes Name Here!!!"/>
                 </div>
 
                 {/* cards */}
@@ -77,6 +81,8 @@ function RecipePage() {
 
 
         </div>
+
+        <Footer/>
     
     </>
   )

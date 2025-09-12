@@ -2,6 +2,8 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Marquee from 'react-fast-marquee';
 import MealImg from '../assets/Meal_Home_Img.png'
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
 function LandingPage() {
 
@@ -15,6 +17,8 @@ function LandingPage() {
 
   return (
     <>
+
+    <Header/>
 
       <div className='container-fluid '>
 
@@ -181,6 +185,8 @@ function LandingPage() {
 
 
       </div>
+
+      <Footer/>
 
     </>
   )

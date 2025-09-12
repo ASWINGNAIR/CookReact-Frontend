@@ -1,7 +1,8 @@
+import React from 'react'
 import { faGraduationCap , faUser , faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
-   
+import Dropdown from 'react-bootstrap/Dropdown'
+
 
 function Header() {
   return (
@@ -36,10 +37,21 @@ function Header() {
 
               {/* User Icon with Dropdown Arrow */}
               
-              <div className="d-flex align-items-center">
-                <FontAwesomeIcon icon={faUser} className="text-white me-2" />
-                <FontAwesomeIcon icon={faCaretDown} className="text-white" />
-              </div>
+                  <Dropdown align="end">
+                    <Dropdown.Toggle
+                      variant="success"
+                      id="dropdown-basic"
+                      className="d-flex align-items-center border-0"
+                    >
+                      <FontAwesomeIcon icon={faUser} className="me-2" />
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="/login">Login</Dropdown.Item>
+                      <Dropdown.Item href="/register">Register</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+
             </div>
           </div>
         </div>
